@@ -1,0 +1,96 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+   height: 100%;
+   width: 100%;
+   background-color: rgb(35, 61, 34);
+}
+
+#panel{
+    height: 90%;
+    width: 90%;
+    background-color: #ffff;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+#ptop{
+    padding: 0px 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 100px;
+    width: 100%;
+    background-color: rgb(119, 255, 133);
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.elem h2{
+    font-weight: 500;
+}
+.box{
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #ffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#pbtm{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding:  20px;
+
+    width: 100%;
+    height: calc(100% - 100px); 
+    overflow: hidden;
+
+
+}
+
+.bubble{
+    height: 60px;
+    width: 60px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    font-weight: 500;
+    transition: all 0.05s ease-in-out;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.8);
+
+
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(88, 255, 102);
+    transform: scale(1.1);
+    box-shadow: inset 0 0 10px rgb(0, 71, 1);
+
+}
+
